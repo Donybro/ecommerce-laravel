@@ -16,10 +16,6 @@ class Category extends Model
 
     public array $translatable = ['name'];
 
-    public static function create(array $array)
-    {
-    }
-
     public function products():HasMany
     {
         return $this->hasMany(Product::class);
